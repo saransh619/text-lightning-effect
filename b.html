@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			*{
+				margin: 0; padding: 0; box-sizing: border-box; list-style: none;
+			}
+			body{
+				background: #000;
+			}
+			.main_div{
+				
+				height: 100vh;
+				width: 100vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.center_div{
+					/* background: black; */
+					height: 60vh;
+					width: 50vw;
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+					/* box-shadow: 2px 2px 7px 3px gray; */
+			}
+
+			li{
+				color: gray;
+				font-size: 10rem;
+				animation: light 1.2s linear infinite;
+
+				}
+
+				li:first-child{
+				animation-delay: 0s;
+
+				}
+
+				li:nth-child(2){
+				animation-delay: 0.1s;
+
+				}
+				li:nth-child(3){
+				animation-delay: 0.2s;
+
+				}
+				li:nth-child(4){
+				animation-delay: 0.3s;
+
+				}
+				li:nth-child(5){
+				animation-delay: 0.4s;
+
+				}
+				li:nth-child(6){
+				animation-delay: 0.5s;
+
+				}
+				li:last-child{
+				animation-delay: 0.6s;
+
+				}
+
+
+			@keyframes light{
+				0%{
+					color: gray;
+					text-shadow: none;
+				}
+
+				80%{
+					color: gray;
+					text-shadow: none;
+				}
+
+				100%{
+					color: yellow;
+					text-shadow: 0 0 1rem red, 0 0 6rem red; 
+				}
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="main_div">
+			<div class="center_div">
+
+				<li>S</li>
+				<li>A</li>
+				<li>R</li>
+				<li>A</li>
+				<li>N</li>
+				<li>S</li>
+				<li>H</li>
+			</div>
+		</div>
+	</body>
+</html>
